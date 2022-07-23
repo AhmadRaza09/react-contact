@@ -2,6 +2,7 @@ import styles from "./Header.module.css";
 
 import logo from "./../../assests/img/logo.png";
 import { useState } from "react";
+import AncherTag from "../UI/AncherTag";
 
 const Header = (props) => {
   const [activeLink, setActiveLink] = useState("");
@@ -36,45 +37,45 @@ const Header = (props) => {
       <div className={styles.logo}>
         <img src={logo} alt="logo" />
         <h1>
-          <a
-            href="/"
+          <AncherTag
+            link="/"
             id="main"
             onClick={activeLinkHandler}
             className={mainActiveClass}
           >
             Contact
-          </a>
+          </AncherTag>
         </h1>
       </div>
 
       <div className={styles.link}>
         <ul>
           <li>
-            <a
-              href="/"
-              onClick={activeLinkHandler}
+            <AncherTag
+              link="/"
               id="account"
+              onClick={activeLinkHandler}
               className={accountActiveClass}
             >
               Create Account
-            </a>
+            </AncherTag>
           </li>
 
           <li>
-            <a
-              href="/"
-              onClick={activeLinkHandler}
+            <AncherTag
+              link="/"
               id="login"
+              onClick={activeLinkHandler}
               className={loginActiveClass}
             >
               Login
-            </a>
+            </AncherTag>
           </li>
 
           <li>user name</li>
 
           <li>
-            <a href="/">Logout</a>
+            <AncherTag link="/">Logout</AncherTag>
           </li>
         </ul>
       </div>

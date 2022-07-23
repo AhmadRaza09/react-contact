@@ -1,0 +1,19 @@
+a {
+  text-decoration: none;
+  color: var(--color);
+  padding: 8px 12px;
+}
+
+a:hover {
+  background-color: var(--secondary-color);
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: var(--color2);
+  font-style: oblique;
+  /* position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center; */
+  border-radius: 20px 12px 20px 12px;
+}

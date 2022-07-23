@@ -1,4 +1,4 @@
-import { Email, Person, Phone, Security } from "@material-ui/icons";
+import { Email, Security } from "@material-ui/icons";
 
 import styles from "./LoginForm.module.css";
 

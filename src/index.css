@@ -5,16 +5,16 @@
   --primary-color: #b0a8b9;
   --secondary-color: #959ab1;
   --teriary-color: #518394;
+  --letter-spacing: 0.6px;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Brush Script MT;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--color);
+  letter-spacing: var(--letter-spacing);
 }
 
 * {

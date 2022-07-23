@@ -60,3 +60,17 @@ a:hover {
   align-items: center; */
   border-radius: 20px 12px 20px 12px;
 }
+
+.active {
+  background-color: var(--teriary-color);
+  color: var(--color);
+  /* text-decoration: underline; */
+  /* text-decoration-color: var(--color2); */
+  font-style: oblique;
+  /* position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center; */
+  border-radius: 20px 12px 20px 12px;
+}

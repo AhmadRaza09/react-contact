@@ -5,4 +5,7 @@
 .others {
   height: 83.46vh;
   margin-bottom: 0px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

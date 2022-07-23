@@ -1,0 +1,10 @@
+.footer {
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.footer > p {
+  padding: 10px;
+  font-weight: 600;
+  font-style: oblique;
+}

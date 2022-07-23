@@ -3,6 +3,9 @@ import styles from "./App.module.css";
 
 import Footer from "./components/Footer/Footer";
 import Header from "./components/header/Header";
+import LoginForm from "./components/Login/LoginForm";
+import Main from "./components/Main/Main";
+import RegisterUser from "./components/Register/RegisterUser";
 
 function App() {
   const [showContent, setShowContent] = useState("");
@@ -16,15 +19,13 @@ function App() {
 
   switch (showContent) {
     case "account":
-      whichComponentToShow = (
-        <div className={styles.others}>create account</div>
-      );
+      whichComponentToShow = <RegisterUser className={styles.others} />;
       break;
     case "login":
-      whichComponentToShow = <div className={styles.others}>login</div>;
+      whichComponentToShow = <LoginForm className={styles.others} />;
       break;
     default:
-      whichComponentToShow = <div className={styles.others}>main content</div>;
+      whichComponentToShow = <Main className={styles.others} />;
   }
 
   return (

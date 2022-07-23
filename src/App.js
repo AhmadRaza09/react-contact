@@ -1,8 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/header/Header";
 
 function App() {
-  return <div className="App">Contact App</div>;
+  return (
+    <>
+      <Header />
+      <div className="App">Contact App</div>
+    </>
+  );
 }
 
 export default App;

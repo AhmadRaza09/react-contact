@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import styles from "./App.module.css";
 
 import Footer from "./components/Footer/Footer";
 import Header from "./components/header/Header";
@@ -16,13 +16,15 @@ function App() {
 
   switch (showContent) {
     case "account":
-      whichComponentToShow = <div>create account</div>;
+      whichComponentToShow = (
+        <div className={styles.others}>create account</div>
+      );
       break;
     case "login":
-      whichComponentToShow = <div>login</div>;
+      whichComponentToShow = <div className={styles.others}>login</div>;
       break;
     default:
-      whichComponentToShow = <div>main content</div>;
+      whichComponentToShow = <div className={styles.others}>main content</div>;
   }
 
   return (

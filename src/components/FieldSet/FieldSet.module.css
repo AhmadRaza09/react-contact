@@ -1,0 +1,30 @@
+.fieldset {
+  border-radius: 100px;
+  border: 2px solid var(--color);
+  border-color: var(--teriary-color);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+  /* background-color: rebeccapurple; */
+}
+
+.fieldset:hover {
+  cursor: text;
+}
+
+.fieldset-label {
+  /* padding-left: 1em; */
+  margin-left: 1em;
+}
+
+.fieldset > input {
+  height: 27px;
+  display: block;
+  border: none;
+  outline: none;
+  background: none;
+  width: 250px;
+  margin-bottom: 4px;
+}

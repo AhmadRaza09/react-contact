@@ -1,4 +1,8 @@
 import { Email, Security } from "@material-ui/icons";
+import FieldSet from "../FieldSet/FieldSet";
+import Button from "../UI/Button/Button";
+import Card from "../UI/Card/Card";
+import Form from "../UI/Form/Form";
 
 import styles from "./LoginForm.module.css";
 
@@ -7,29 +11,27 @@ const LoginForm = (props) => {
 
   return (
     <div className={classes}>
-      <div className={styles.card}>
-        <form className={styles.form}>
+      <Card>
+        <Form>
           <p className={styles["form-title"]}>Login to Your Account</p>
 
-          <fieldset className={styles["form-input"]}>
-            <legend className={styles["input-label"]}>Email Address:</legend>
+          <FieldSet label="Email Address:">
             <input />
             <div className={styles["input-icon"]}>
               <Email className={styles["input-icon-color"]} />
             </div>
-          </fieldset>
+          </FieldSet>
 
-          <fieldset className={styles["form-input"]}>
-            <legend className={styles["input-label"]}>Password:</legend>
+          <FieldSet label="Password:">
             <input />
             <div className={styles["input-icon"]}>
               <Security className={styles["input-icon-color"]} />
             </div>
-          </fieldset>
+          </FieldSet>
 
-          <button className={styles.button}>Login</button>
-        </form>
-      </div>
+          <Button type="submit">Login</Button>
+        </Form>
+      </Card>
     </div>
   );
 };

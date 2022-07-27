@@ -2,7 +2,7 @@ import styles from "./Header.module.css";
 
 import logo from "./../../assests/img/logo.png";
 import { useState } from "react";
-import AncherTag from "../UI/AncherTag";
+import AncherTag from "../UI/Ancher/AncherTag";
 
 const Header = (props) => {
   const [activeLink, setActiveLink] = useState("");
